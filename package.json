@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "browser-sync": "^2.29.3"
+  },
+
+  "scripts": {
+    "dev": "browser-sync start --server --files Index.html styles.css"
   }
 }
