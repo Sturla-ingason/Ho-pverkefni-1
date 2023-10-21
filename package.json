@@ -5,7 +5,7 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files Index.html styles.css",
     "sass": "sass styles.scss styles.css -w",
-    "dev": "concurrently npm:sass npm:sass"
+    "dev": "concurrently npm:browser-sync npm:sass"
   },
   "dependencies": {
     "sass": "^1.69.4"
