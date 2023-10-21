@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "install": "^0.13.0",
+    "npm": "^10.2.1"
+  }
+}
