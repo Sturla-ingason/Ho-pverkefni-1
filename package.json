@@ -2,8 +2,10 @@
   "devDependencies": {
     "browser-sync": "^2.29.3"
   },
-
   "scripts": {
-    "dev": "browser-sync start --server --files Index.html styles.css"
+    "dev": "browser-sync start --server --files Index.html styles.css sass styles.scss styles.css -w"
+  },
+  "dependencies": {
+    "sass": "^1.69.4"
   }
 }
