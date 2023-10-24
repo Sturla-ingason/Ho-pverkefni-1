@@ -1,80 +1,65 @@
+@charset "UTF-8";
 /* Reset og border-box á allt */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* Leturgerðir */
- 
 @font-face {
-font-family: 'Lora';
-font-style: normal;
-font-display: swap;
-src: url(./fonts/Lora-VariableFont_wght.ttf) format('woff');
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
-
 @font-face {
-font-family: 'Noto Sans Display';
-font-style: normal;
-font-display: swap;
-src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format('woff');
+  font-family: "Noto Sans Display";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format("woff");
 }
-
 /* Stillingar */
-
 :root {
-/* Grunn bilið okkar er 1rem == 16px */
---font-base-body-px: 16px;
---spacing: 1rem;
-
-/* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
---vertical-space: calc(var(--gutter));
-
-/* Hámarksbreidd á efni */
---max-width: 1400px;
---width-offset: calc(100% - (2 * var(--offset)));
-
-/* Border breiddir */
---border-small: 1px;
---border-large: 8px;
---border-radius: 6px;
-
-/* Litir */
---color-gold: #ffe7ae;
---color-dark: #000000;
---color-light: #fff9ee;
-
---color-white: #ffffff;
---color-brown: #3C2A1E;
-
-
-
-
-
-/* Grid stillingar */
---columns: 12;
---gutter: 30px;
---offset: 20px;
-
-/* Letur stillingar */
---font-base-size: 1rem;
---font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
---font-family-heading: 'Lora', Georgia, serif;
-
-/* Transitions */
---transition-time-short: 300ms;
---transition-time-long: 600ms;
---transition-timing-function: ease-in-out;
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter));
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+  --width-offset: calc(100% - (2 * var(--offset)));
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-dark: #000000;
+  --color-light: #fff9ee;
+  --color-white: #ffffff;
+  --color-brown: #3C2A1E;
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Lora", Georgia, serif;
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
 }
 
 /* Almennt */
@@ -82,314 +67,267 @@ html,
 input,
 select,
 button {
-font-size: var(--font-base-body-px);
-font-family: var(--font-family-base);
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
 }
 
 h1,
 h2,
 h3 {
-/* Setjum almennt bil á eftir fyrirsögnum */
-margin-bottom: var(--spacing);
-
-font-family: var(--font-family-heading);
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+  font-family: var(--font-family-heading);
 }
 
 h1 {
-font-size: 90px;
+  font-size: 90px;
 }
 
 a {
-color: inherit;
-background-color: inherit;
+  color: inherit;
+  background-color: inherit;
 }
 
 img {
-max-width: 100%;
+  max-width: 100%;
 }
 
 /** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
 .sr-only:not(:focus):not(:active) {
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-height: 1px;
-overflow: hidden;
-position: absolute;
-white-space: nowrap;
-width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* Takki */
-
 .button {
-display: inline-block;
-
-border: 1px solid var(--color-dark);
-border-radius: var(--border-radius);
-padding: calc(var(--spacing) / 2) calc(var(--spacing));
-
-font-family: var(--font-family-base);
-text-decoration: none;
-text-align: center;
-
-color: var(--color-dark);
-background-color: var(--color-white);
-
-transition: background-color var(--transition-time-short)
-    var(--transition-timing-function),
-    color var(--transition-time-short);
+  display: inline-block;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius);
+  padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  font-family: var(--font-family-base);
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  transition: background-color var(--transition-time-short) var(--transition-timing-function), color var(--transition-time-short);
 }
 
 .button:hover {
-color: var(--color-dark);
-background-color: var(--color-gold);
+  color: var(--color-dark);
+  background-color: var(--color-gold);
 }
 
 /* Layout */
-
 .wrapper {
-display: grid;
-grid-template-rows: auto;
-grid-template-columns: 100%;
-
-/* grid items eru miðjuð */
-justify-items: center;
-
-gap: var(--vertical-space);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  /* grid items eru miðjuð */
+  justify-items: center;
+  gap: var(--vertical-space);
 }
 
 /** Haus **/
 .header {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: var(--spacing);
-
-padding-top: var(--spacing);
-width: 100%;
-background-image: url('myndir/headerMynd.jpg');
-background-position: center;
-background-size: cover; 
-padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing);
+  padding-top: var(--spacing);
+  width: 100%;
+  background-image: url("myndir/headerMynd.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
 }
 
-
 .header header {
-display: flex;
-flex-direction: column;
-align-items: center;
-
-max-width: var(--width-offset);
-
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--width-offset);
+  text-align: center;
 }
 
 /** Valmynd **/
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .search {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .cart {
-    font-size: 24px;
-    cursor: pointer;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .navigation {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 100%;
-
-color: var(--color-dark);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  color: var(--color-dark);
 }
 
 .navigation ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 100%;
-max-width: var(--width-offset);
-
-list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--width-offset);
+  list-style: none;
 }
 
 /** Meginmál **/
-
 .main {
-display: grid;
-grid-template-rows: auto;
-grid-template-columns: 100%;
-gap: var(--vertical-space);
-
-width: var(--width-offset);
-max-width: var(--max-width);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  gap: var(--vertical-space);
+  width: var(--width-offset);
+  max-width: var(--max-width);
 }
 
 /** Fótur **/
-
 .footer {
-padding: var(--spacing);
-width: 100%;
-
-background-color: var(--color-brown);
-color: var(--color-white);
+  padding: var(--spacing);
+  width: 100%;
+  background-color: var(--color-brown);
+  color: var(--color-white);
 }
 
 .footer .content {
-display: grid;
-gap: var(--vertical-space);
-
-margin: 0 auto;
-
-text-align: center;
+  display: grid;
+  gap: var(--vertical-space);
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 500px) {
-.footer .content {
+  .footer .content {
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: auto;
-
     max-width: var(--max-width);
-}
-
-.footer section {
+  }
+  .footer section {
     grid-column-end: span 3;
-}
-
-.footer section:first-child {
+  }
+  .footer section:first-child {
     grid-column-start: 3;
+  }
 }
+.footer ul {
+  list-style: none;
 }
 
-.footer ul {
-list-style: none;
-}
-.footerbottom{
-    text-align: center;
+.footerbottom {
+  text-align: center;
 }
 
 .popular {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    text-align: center;
-    background-color: #E1CEC2;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #E1CEC2;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Box! */
-
 .boxes {
-display: grid;
-gap: var(--vertical-space);
-justify-items: center;
-width: 100%;
+  display: grid;
+  gap: var(--vertical-space);
+  justify-items: center;
+  width: 100%;
 }
 
 @media (min-width: 500px) {
-.boxes {
+  .boxes {
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: auto;
+  }
 }
-}
-
 .boxes .box {
-grid-column: span 12;
-
-display: flex;
-flex-direction: column;
-
-gap: var(--spacing);
-
-padding: calc(var(--spacing) * 0.5);
-width: 100%;
-min-height: 100px;
-
-color: var(--color-dark);
-background-color: var(--color-white);
-border-radius: 5px;
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  padding: calc(var(--spacing) * 0.5);
+  width: 100%;
+  min-height: 100px;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border-radius: 5px;
 }
 
 @media (min-width: 500px) {
-.boxes .box {
+  .boxes .box {
     grid-column: span 6;
+  }
 }
-}
-
 @media (min-width: 1000px) {
-.boxes .box {
+  .boxes .box {
     grid-column: span 3;
+  }
 }
-}
-
-
-
 .boxes .box .content {
-flex: 1;
+  flex: 1;
 }
 
 .boxes .box img {
-max-height: 400px;
-
-object-fit: cover;
-object-position: top center;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 @media (min-width: 1000px) {
-.boxes .box img {
-    max-height: 350px
+  .boxes .box img {
+    max-height: 350px;
+  }
 }
-}
-
-
 /* Pöntunarform */
-
 fieldset {
-border: var(--border-small) solid var(--color-dark);
+  border: var(--border-small) solid var(--color-dark);
 }
 
 fieldset legend {
-font-weight: bold;
+  font-weight: bold;
 }
 
 fieldset div label {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 fieldset input,
 fieldset select,
 fieldset textarea {
-padding: calc(var(--spacing) * 0.5);
-width: 100%;
+  padding: calc(var(--spacing) * 0.5);
+  width: 100%;
 }
 
-fieldset input[type='checkbox'] {
-width: auto;
+fieldset input[type=checkbox] {
+  width: auto;
 }
 
 fieldset .checkbox label {
-flex-direction: row;
-gap: calc(var(--spacing) * 0.5);
+  flex-direction: row;
+  gap: calc(var(--spacing) * 0.5);
 }
 
 form button {
-padding: calc(var(--spacing) * 0.25);
-border-radius: var(--border-radius);
+  padding: calc(var(--spacing) * 0.25);
+  border-radius: var(--border-radius);
 }
 
-
-þetta sökkar
-
-
-
-
-
-
+/*# sourceMappingURL=styles.css.map */
