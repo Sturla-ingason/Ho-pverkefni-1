@@ -2,6 +2,7 @@
 .logo {
     font-size: 24px;
     font-weight: bold;
+    justify-content: left;
 }
 
 .search {
@@ -15,20 +16,16 @@
 }
 
 .navigation {
-display: flex;
+display: flex inline;
 flex-wrap: wrap;
-justify-content: center;
 width: 100%;
+padding-top: 1rem;
+justify-content: center;
 
 color: var(--color-dark);
 }
 
-.navigation ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 100%;
-max-width: var(--width-offset);
-
-list-style: none;
+.gridlogo{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }

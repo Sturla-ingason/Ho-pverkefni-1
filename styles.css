@@ -126,10 +126,9 @@ img {
 .wrapper {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 100%;
+  grid-template-columns: 12fr;
   /* grid items eru miðjuð */
   justify-items: center;
-  gap: var(--vertical-space);
 }
 
 /** Haus **/
@@ -138,12 +137,11 @@ img {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing);
-  padding-top: var(--spacing);
   width: 100%;
   background-image: url("myndir/headerMynd.jpg");
   background-position: center;
   background-size: cover;
-  padding: 100px 0;
+  margin-bottom: 2rem;
 }
 
 .header header {
@@ -151,6 +149,8 @@ img {
   flex-direction: column;
   align-items: center;
   max-width: var(--width-offset);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -158,6 +158,7 @@ img {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  justify-content: left;
 }
 
 .search {
@@ -171,20 +172,17 @@ img {
 }
 
 .navigation {
-  display: flex;
+  display: flex inline;
   flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
+  padding-top: 1rem;
+  justify-content: center;
   color: var(--color-dark);
 }
 
-.navigation ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: var(--width-offset);
-  list-style: none;
+.gridlogo {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 /** Meginmál **/
@@ -193,8 +191,6 @@ img {
   grid-template-rows: auto;
   grid-template-columns: 100%;
   gap: var(--vertical-space);
-  width: var(--width-offset);
-  max-width: var(--max-width);
 }
 
 /** Fótur **/
@@ -258,7 +254,6 @@ img {
   }
 }
 .boxes .box {
-  grid-column: span 12;
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
@@ -268,6 +263,16 @@ img {
   color: var(--color-dark);
   background-color: var(--color-white);
   border-radius: 5px;
+}
+
+.hmegin {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.vmegin {
+  grid-column-start: 7;
+  grid-column-end: 11;
 }
 
 @media (min-width: 500px) {
