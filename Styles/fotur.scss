@@ -8,6 +8,15 @@ background-color: var(--color-brown);
 color: var(--color-white);
 }
 
+.footer-index{
+    margin-top: -20%;
+    padding: var(--spacing);
+    padding-top: 23%;
+    width: 100%;
+    background-color: var(--color-brown);
+    color: var(--color-white);
+}
+
 .footer .content {
 display: grid;
 gap: var(--vertical-space);
@@ -53,4 +62,8 @@ list-style: none;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.skalinur{
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
