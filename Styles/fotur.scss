@@ -26,11 +26,11 @@ text-align: center;
 }
 
 .footer section {
-    grid-column-end: span 3;
+    grid-column-end: span 4;
 }
 
 .footer section:first-child {
-    grid-column-start: 3;
+    grid-column-start: 1;
 }
 }
 
@@ -38,7 +38,9 @@ text-align: center;
 list-style: none;
 }
 .footerbottom{
-    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    font-size: 14px;
 }
 
 .popular {
