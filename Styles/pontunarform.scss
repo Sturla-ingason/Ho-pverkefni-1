@@ -39,4 +39,21 @@ border-radius: var(--border-radius);
     flex-direction: column;
     align-items: center;
     gap: var(--spacing);
+    
+    width: 100%;
+    
+    margin-bottom: 2rem;
+}
+
+.headerpöntun header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    max-width: var(--width-offset);
+    
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    
+    text-align: center;
 }
