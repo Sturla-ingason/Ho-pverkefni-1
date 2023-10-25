@@ -1,0 +1,22 @@
+.header-vorulisti{
+    font-size: 60px;
+}
+
+.voru-filter{
+    display: inline-block;
+    list-style-type: none;
+    align-self: flex-start;
+    padding-left: 1rem;
+}
+
+.filter-box{
+    display: inline-block;
+    align-items: left;
+
+    padding: calc(var(--spacing) / 2) calc(var(--spacing));
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: #E1CEC2;
+}
