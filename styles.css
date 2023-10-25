@@ -152,6 +152,7 @@ img {
   align-items: center;
   gap: var(--spacing);
   width: 100%;
+  grid-column-start: 1;
   background-image: url("myndir/headerMynd.jpg");
   background-position: center;
   background-size: cover;
@@ -233,11 +234,13 @@ img {
 
 /** Fótur **/
 .footer {
-  padding: var(--spacing);
-  width: 100%;
-  background-color: var(--color-brown);
-  color: var(--color-white);
-}
+    margin-top: -20%;
+    padding: var(--spacing);
+    padding-top: 23%;
+    width: 100%;
+    background-color: var(--color-brown);
+    color: var(--color-white);
+  }
 
 .footer .content {
   display: grid;
@@ -270,16 +273,17 @@ img {
 }
 
 .popular {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  background-color: #E1CEC2;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    background-color: #E1CEC2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
 /* Box! */
 .boxes {
