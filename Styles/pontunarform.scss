@@ -33,3 +33,10 @@ form button {
 padding: calc(var(--spacing) * 0.25);
 border-radius: var(--border-radius);
 }
+
+.headerpöntun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+}
