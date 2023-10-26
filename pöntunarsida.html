@@ -13,171 +13,175 @@
   <meta property="og:image" content="./myndir/sharing.jpg">
 </head>
 
-<body>
-  <div class="wrapper">
-    <div class="">
-
-    <div class = "navigation">
+<body class = "wrapper">
+  <div class = "navigation">
       
-      <div class="logo navgrid1">
-        ⚙️ Tæknibúðin
+    <div class="logo navgrid1">
+      ⚙️ Tæknibúðin
+    </div>
+
+    <div class="search navgrid2">
+        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." />
+        <button>🔍</button>
+    </div>
+    
+    <nav class = "navgrid3">
+      <a href="voru-listi.html">Nýjar vörur</a>
+      <a href="pöntunarsida.html">Tilboðs vörur</a>
+      <a href="voru-listi.html">Allar vörur</a>
+    </nav>
+
+      <div class="cart">
+        🛒
       </div>
-
-      <div class="search navgrid2">
-          <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." />
-          <button>🔍</button>
-      </div>
-      
-      <nav class = "navgrid3">
-        <a href="voru-listi.html">Nýjar vörur</a>
-        <a href="pontunarsida.html">Tilboðs vörur</a>
-        <a href="voru-listi.html">Allar vörur</a>
-      </nav>
-
-        <div class="cart">
-          🛒
-        </div>
-
-      </div>
-
-      <header>
-        <h1>Pantanir</h1>
-        <p>
-          Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
-          þú sækir.
-        </p>
-      </header>
-
-      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
     </div>
 
-    <main class="main" id="efni">
-      <form method="post" action="." class="boxes">
-        <fieldset class="box">
-          <legend>Panta borð</legend>
-          <div>
-            <label for="when">Hvenær viltu koma?</label>
-            <input type="datetime-local" id="when" name="when">
-          </div>
-          <div>
-            <label for="size">Hve mörg?</label>
-            <select id="size">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-            </select>
-          </div>
-          <div>
-            <label for="special">Viltu taka eitthvað fram?</label>
-            <textarea id="special"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="box">
-          <legend>Panta mat</legend>
-          <div>
-            <label for="food1">Réttur #1</label>
-            <input id="food1" list="foods">
-          </div>
-          <div>
-            <label for="food2">Réttur #2</label>
-            <input id="food2" list="foods">
-          </div>
-          <div>
-            <label for="food3">Réttur #3</label>
-            <input id="food3" list="foods">
-          </div>
-          <div>
-            <label for="food4">Réttur #4</label>
-            <input id="food4" list="foods">
-          </div>
-          <div>
-            <label for="food5">Réttur #5</label>
-            <input id="food5" list="foods">
-          </div>
-          <div>
-            <label for="address">Heimilisfang</label>
-            <input type="text" id="address">
-          </div>
-        </fieldset>
-
-        <fieldset class="box">
-          <legend>Þínar upplýsingar</legend>
-          <div>
-            <label for="name">Nafn</label>
-            <input id="name" type="text" required>
-          </div>
-          <div>
-            <label for="email">Netfang</label>
-            <input id="email" name="email" type="email" required placeholder="nafn@example.org">
-          </div>
-          <div>
-            <label for="phone">Sími</label>
-            <input id="phone" type="tel" required placeholder="345-6789">
-          </div>
-        </fieldset>
-        <fieldset class="box">
-          <legend>Samþykkja og panta</legend>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="terms"><span>Ég samþykki skilmála
-                Veitingastaðsins</span></label>
-          </div>
-          <button class="button">Panta</button>
-        </fieldset>
-        <datalist id="foods">
-          <option>Lasagna</option>
-          <option>Sveppa risotto</option>
-          <option>Ferskt pasta</option>
-          <option>Quesadilla</option>
-          <option>Falafel með</option>
-          <option>Súpa dagsins</option>
-          <option>Kryddaðar sætkartöflur</option>
-          <option>Hamborgari</option>
-          <option>Pizza</option>
-        </datalist>
-      </form>
-      <div class="buttons"><a link="button" href="../index.html">Aftur á forsíðu</a></div>
-    </main>
-
-    <footer class="footer">
-      <div class="content">
-        <section>
-          <h2>Opnunartími</h2>
-          <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
-            <dd>09:00–18:00</dd>
-            <dt>Föstudaga</dt>
-            <dd>10:00–22:00</dd>
-            <dt>Laugardaga</dt>
-            <dd>11:00–22:00</dd>
-            <dt>Sunnudaga</dt>
-            <dd>Lokað</dd>
-          </dl>
-        </section>
-
-        <section>
-          <h2>Hér erum við</h2>
-          <ul>
-            <li>Veitingastaðurinn ehf.</li>
-            <li>Aðalgata 10</li>
-            <li>100 Reykjavík</li>
-            <li><a href="tel:3334567">Sími 333-4567</a></li>
-            <li>
-              <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </footer>
   </div>
+
+  <header class = "header-pontun">
+    <p>Pöntun</p>
+  </header>
+
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+  </div>
+
+  <main class="main grid-main" id="efni">
+    <form method="post" action="." class="boxes">
+      <fieldset class="box">
+        <legend>Panta borð</legend>
+        <div>
+          <label for="when">Hvenær viltu koma?</label>
+          <input type="datetime-local" id="when" name="when">
+        </div>
+        <div>
+          <label for="size">Hve mörg?</label>
+          <select id="size">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div>
+          <label for="special">Viltu taka eitthvað fram?</label>
+          <textarea id="special"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="box">
+        <legend>Panta mat</legend>
+        <div>
+          <label for="food1">Réttur #1</label>
+          <input id="food1" list="foods">
+        </div>
+        <div>
+          <label for="food2">Réttur #2</label>
+          <input id="food2" list="foods">
+        </div>
+        <div>
+          <label for="food3">Réttur #3</label>
+          <input id="food3" list="foods">
+        </div>
+        <div>
+          <label for="food4">Réttur #4</label>
+          <input id="food4" list="foods">
+        </div>
+        <div>
+          <label for="food5">Réttur #5</label>
+          <input id="food5" list="foods">
+        </div>
+        <div>
+          <label for="address">Heimilisfang</label>
+          <input type="text" id="address">
+        </div>
+      </fieldset>
+  
+      <fieldset class="box">
+        <legend>Þínar upplýsingar</legend>
+        <div>
+          <label for="name">Nafn</label>
+          <input id="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">Netfang</label>
+          <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+        </div>
+        <div>
+          <label for="phone">Sími</label>
+          <input id="phone" type="tel" required placeholder="345-6789">
+        </div>
+      </fieldset>
+      <fieldset class="box">
+        <legend>Samþykkja og panta</legend>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="terms"><span>Ég samþykki skilmála
+              Veitingastaðsins</span></label>
+        </div>
+        <button class="button">Panta</button>
+      </fieldset>
+      <datalist id="foods">
+        <option>Lasagna</option>
+        <option>Sveppa risotto</option>
+        <option>Ferskt pasta</option>
+        <option>Quesadilla</option>
+        <option>Falafel með</option>
+        <option>Súpa dagsins</option>
+        <option>Kryddaðar sætkartöflur</option>
+        <option>Hamborgari</option>
+        <option>Pizza</option>
+      </datalist>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="content">
+      <section>
+        <h2>Opnunartími</h2>
+        <hr>
+        <p>
+          Opið alla virka daga frá 9:00–18:00
+          Opið á laugardögum frá 12:00–16:00
+          Lokað á sunnudögum</p>
+      </section>
+
+      <section>
+        <h2>Hafðu samband</h2>
+        <hr>
+        <p>Skiptiborð: 234–4568
+          Tölvupóstur: thjonusta@example.org
+        </p>
+      </section>
+
+      <section>
+        <h2>Annað</h2>
+        <hr>
+        <p>Rekja sendingu<br>
+          Skilaréttur<br>
+          Um okkur<br>
+          Störf
+        </p>            
+      </section>
+
+      <section class = "footerbottom">
+        <hr>
+        <p>
+          © 2021 TÆKNIBÚÐIN — Allur réttur áskilinn
+        </p>
+      </section>
+
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

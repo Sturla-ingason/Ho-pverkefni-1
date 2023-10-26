@@ -449,23 +449,12 @@ form button {
   border-radius: var(--border-radius);
 }
 
-.headerpöntun {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing);
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.headerpöntun header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: var(--width-offset);
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  text-align: center;
+.header-pontun {
+  font-size: 60px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-self: flex-start;
+  padding-left: 1rem;
 }
 
 .header-vorulisti {
