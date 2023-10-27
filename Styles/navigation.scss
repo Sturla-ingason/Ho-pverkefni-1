@@ -29,3 +29,62 @@ color: var(--color-dark);
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
+.nav-pont{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    
+}
+
+.pontun-header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 60px;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.titil{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 40px;
+
+    align-self: center;
+}
+
+.leit{
+    grid-column-start: 4;
+    grid-column-end: 8;
+
+    max-width: 450px;
+    max-height: 60px;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-self: center;
+    align-self: center;
+
+}
+
+.category{
+    grid-column-start: 8;
+    grid-column-end: 11;
+
+    font-size: 16px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.chart{
+    grid-column-start: 12;
+
+    justify-self: center;
+    align-self: center; 
+}

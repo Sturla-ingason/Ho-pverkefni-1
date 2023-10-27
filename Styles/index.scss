@@ -63,3 +63,16 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.mynd-header{
+  background-image: url('myndir/headerMynd.jpg');  
+}
+
+.header-index{
+  grid-column: span 12;
+  align-self: center;
+  justify-self: center;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

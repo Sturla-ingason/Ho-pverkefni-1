@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
     "sass": "^1.69.5",
     "stylelint": "^15.11.0"
   },
