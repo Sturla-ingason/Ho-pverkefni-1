@@ -1,13 +1,12 @@
 {
   "devDependencies": {
-    "browser-sync": "^2.29.3"
+    "browser-sync": "^2.29.3",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0"
   },
   "scripts": {
     "browser-sync": "browser-sync start --server --files Index.html styles.css",
     "sass": "sass Styles/styles.scss styles.css -w",
     "dev": "concurrently npm:browser-sync npm:sass"
-  },
-  "dependencies": {
-    "sass": "^1.69.4"
   }
 }
