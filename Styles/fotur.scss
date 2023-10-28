@@ -67,3 +67,17 @@ list-style: none;
 .skalinur{
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-content h2{
+    padding-top: 1rem;    
+}
+
+.footer-content p {
+    padding-top: 0.5rem;
+}

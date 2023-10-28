@@ -14,64 +14,62 @@
 </head>
 
 <body class = "wrapper">
-  <div class="headerpöntun">
-    <div class = "navigation">
-      
-      <div class="logo navgrid1">
-        ⚙️ Tæknibúðin
-      </div>
 
-      <div class="search navgrid2">
-          <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." />
-          <button>🔍</button>
-      </div>
-      
-      <nav class = "navgrid3">
-        <a href="voru-listi.html">Nýjar vörur</a>
-        <a href="pöntunarsida.html">Tilboðs vörur</a>
-        <a href="voru-listi.html">Allar vörur</a>
-      </nav>
-
-        <div class="cart">
-          🛒
-        </div>
-
-      </div>
-      
-      <header class = "header-vorulisti">
-        <p>Nýjarvörur</p>
-      </header>
-
-      <p class = "texti">Raða eftir</p>
-
-      <ul class = "voru-filter">
-        <li class = "filter-box">
-          <p>Heiti</p>
-        </li>
-
-        <li class = "filter-box">
-          <p>Lægsta verð</p>
-        </li>
-
-        <li class = "filter-box">
-          <p>Hæsta verð</p>
-        </li>
-
-        <li class = "filter-box">
-          <p>Vinsældum</p>
-        </li>
-
-        <li class = "filter-box">
-          <p>Afslætti</p>
-        </li>
-
-      </ul>
-
+  <header class = "grid">
+    <div class="logo titil">
+      ⚙️Tæknibúðin
     </div>
 
-  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+    <div class="leit">
+        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." /> <button>🔍</button>
+    </div>
+      
+    <nav class = "category">
+      <a href="voru-listi.html">Nýjar vörur</a>
+      <a href="pöntunarsida.html">Tilboðs vörur</a>
+      <a href="voru-listi.html">Allar vörur</a>
+    </nav>
 
+    <div class="cart chart">
+      🛒
+    </div>
+
+
+    <div class = "pontun-header">
+      <p>Pöntun</p>
+    </div>
+
+  </header>
+
+  <div class = "grid filter-grid">
+    <p class = "texti filter">Raða eftir</p>
+
+    <ul class = "voru-filter filter">
+      <li class = "filter-box">
+        <p>Heiti</p>
+      </li>
+
+      <li class = "filter-box">
+        <p>Lægsta verð</p>
+      </li>
+
+      <li class = "filter-box">
+        <p>Hæsta verð</p>
+      </li>
+
+      <li class = "filter-box">
+        <p>Vinsældum</p>
+      </li>
+
+      <li class = "filter-box">
+        <p>Afslætti</p>
+      </li>
+
+    </ul>
   </div>
+
+    <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
   
   <main class="main" id="efni">
     <section class="popular">
@@ -325,45 +323,60 @@
     </section>
   </main>
 
-    <footer class="footer">
-      <div class="content">
-        <section>
-          <h2>Opnunartími</h2>
-          <hr>
-          <p>
-            Opið alla virka daga frá 9:00–18:00
-            Opið á laugardögum frá 12:00–16:00
-            Lokað á sunnudögum</p>
-        </section>
-  
-        <section>
-          <h2>Hafðu samband</h2>
-          <hr>
-          <p>Skiptiborð: 234–4568
-            Tölvupóstur: thjonusta@example.org
-          </p>
-        </section>
-  
-        <section>
-          <h2>Annað</h2>
-          <hr>
-          <p>Rekja sendingu<br>
-            Skilaréttur<br>
-            Um okkur<br>
-            Störf
-          </p>            
-        </section>
-  
-        <section class = "footerbottom">
-          <hr>
-          <p>
-            © 2021 TÆKNIBÚÐIN — Allur réttur áskilinn
-          </p>
-        </section>
-  
-      </div>
-  
-    </footer>
+  <footer class="footer span">
+    <div class="content">
+      <section class = "footer-content">
+        <h2>Opnunartími</h2>
+        <hr>
+        <p>
+          Opið alla virka daga frá 9:00–18:00
+        </p>
+        <p>
+          Opið á laugardögum frá 12:00–16:00
+        </p>
+        <p>
+          Lokað á sunnudögum
+        </p>
+      </section>
+
+      <section class = "footer-content">
+        <h2>Hafðu samband</h2>
+        <hr>
+        <p>
+          Skiptiborð: 234–4568
+        </p>
+        <p>
+          Tölvupóstur: thjonusta@example.org
+        </p>
+      </section>
+
+      <section class = "footer-content">
+        <h2>Annað</h2>
+        <hr>
+        <p>
+          Rekja sendingu
+        </p>
+        <p>
+          Skilaréttur
+        </p>        
+        <p>
+          Um okkur
+        </p>
+        <p>
+          Störf
+        </p>
+      </section>
+
+      <section class = "footerbottom">
+        <hr>
+        <p>
+          © 2021 TÆKNIBÚÐIN — Allur réttur áskilinn
+        </p>
+      </section>
+
+    </div>
+
+  </footer>
 </body>
 
 </html>

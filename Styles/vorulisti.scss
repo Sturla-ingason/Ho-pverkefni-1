@@ -42,3 +42,12 @@
     margin-right: 5px;
 }
 
+.filter{
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+.filter-grid{
+    justify-self: flex-start;
+    padding-bottom: 2rem;
+}
