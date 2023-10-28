@@ -43,98 +43,62 @@
 
   </div>
 
-  <main class="main span" id="efni">
-    <form method="post" action="." class="boxes">
-      <fieldset class="box">
-        <legend>Panta borð</legend>
-        <div>
-          <label for="when">Hvenær viltu koma?</label>
-          <input type="datetime-local" id="when" name="when">
+  <main class="main grid" id="efni">
+    
+    <div class = "grid-6 kaupandi">
+      <p class = "kaupandi"><strong>Kaupandi</strong></p>
+
+      <div class = "input">
+
+        <lable for = "nafn">Nafn</lable>
+        <input type = "text" id = "nafn">
+      
+        <div class = "test">
+          <lable for = "Netfang">Netfang</lable>
+          <input type = "text" id = "Netfang">
         </div>
-        <div>
-          <label for="size">Hve mörg?</label>
-          <select id="size">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-          </select>
+      </div>
+      
+      <div class = "inputh">
+        <lable for = "kennitala">Kennitala</lable>
+        <input type = "text" id = "kennitala">
+      
+        <div class = "test">
+          <lable for = "simi">Sími</lable>
+          <input type = "text" id = "simi"> 
         </div>
-        <div>
-          <label for="special">Viltu taka eitthvað fram?</label>
-          <textarea id="special"></textarea>
+      </div>
+    </div>
+
+    <div class = "grid-6 kaupandi">
+        
+      <p class = "kaupandi"><strong>Afhending</strong></p>
+
+      <div class = "input">
+        <lable for = "heimilisfang">Heimilisfang</lable>
+        <input type = "text" id = "heimilisfang">
+
+        <div class = "test">
+          <lable for = "Staður">Staður</lable>
+          <input type = "text" id = "Staður"> 
         </div>
-      </fieldset>
-      <fieldset class="box">
-        <legend>Panta mat</legend>
-        <div>
-          <label for="food1">Réttur #1</label>
-          <input id="food1" list="foods">
+      </div>
+
+      <div class = "inputh">
+        <lable for = "postnumer">Póstnúmer</lable>
+        <input type = "text" id = "postnumer">
+
+        <div class = "test">
+          <lable for = "ath">Athugasemd</lable>
+          <input type = "text" id = "ath"> 
         </div>
-        <div>
-          <label for="food2">Réttur #2</label>
-          <input id="food2" list="foods">
-        </div>
-        <div>
-          <label for="food3">Réttur #3</label>
-          <input id="food3" list="foods">
-        </div>
-        <div>
-          <label for="food4">Réttur #4</label>
-          <input id="food4" list="foods">
-        </div>
-        <div>
-          <label for="food5">Réttur #5</label>
-          <input id="food5" list="foods">
-        </div>
-        <div>
-          <label for="address">Heimilisfang</label>
-          <input type="text" id="address">
-        </div>
-      </fieldset>
-  
-      <fieldset class="box">
-        <legend>Þínar upplýsingar</legend>
-        <div>
-          <label for="name">Nafn</label>
-          <input id="name" type="text" required>
-        </div>
-        <div>
-          <label for="email">Netfang</label>
-          <input id="email" name="email" type="email" required placeholder="nafn@example.org">
-        </div>
-        <div>
-          <label for="phone">Sími</label>
-          <input id="phone" type="tel" required placeholder="345-6789">
-        </div>
-      </fieldset>
-      <fieldset class="box">
-        <legend>Samþykkja og panta</legend>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="terms"><span>Ég samþykki skilmála
-              Veitingastaðsins</span></label>
-        </div>
-        <button class="button">Panta</button>
-      </fieldset>
-      <datalist id="foods">
-        <option>Lasagna</option>
-        <option>Sveppa risotto</option>
-        <option>Ferskt pasta</option>
-        <option>Quesadilla</option>
-        <option>Falafel með</option>
-        <option>Súpa dagsins</option>
-        <option>Kryddaðar sætkartöflur</option>
-        <option>Hamborgari</option>
-        <option>Pizza</option>
-      </datalist>
-    </form>
+      </div>
+    </div>
+
+    <div class = "grid-6">
+      
+    </div>
+
 
   </main>
 
