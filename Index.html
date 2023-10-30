@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tæknibúðin</title>
   <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./grid.css">
   <meta name="description" content="Forsíða Veitingastaðsins, veitingastaður með allar þær veitingar sem þig vantar.">
   <meta property="og:title" content="Veitingastaðurinn">
   <meta property="og:description" content="Velkomin á Veitingastaðinn!">
@@ -15,20 +14,22 @@
 
 <body class = "wrapper">
   <header class = "grid mynd-header">
-    <div class="logo titil">
+    <div class="titil">
       ⚙️Tæknibúðin
     </div>
 
     <div class="leit">
         <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." /> <button>🔍</button>
     </div>
-      
     <nav class = "category">
-      <a href="voru-listi.html">Nýjar vörur</a>
-      <a href="pöntunarsida.html">Tilboðs vörur</a>
-      <a href="voru-listi.html">Allar vörur</a>
+      <input type="checkbox" id="hamborgaraMenu">
+      <label class="hamborgari" for="hamborgaraMenu">☰</label>
+      <ul class="menu">
+        <li><a href="voru-listi.html">Nýjar vörur</a></li>
+        <li><a href="pöntunarsida.html">Tilboðs vörur</a></li>
+        <li><a href="voru-listi.html">Allar vörur</a></li>
+      </ul>
     </nav>
-
     <div class="cart chart">
       🛒
     </div>
@@ -58,7 +59,7 @@
             </p>
           </div>
 
-          <a class="button2" href="./sidur/um.html">Lesa meira um okkur</a>
+          <a class="button2" href="./voru-listi.html">Skoða nýjar vörur</a>
 
         </div>
       </div>
@@ -92,7 +93,7 @@
           <div class="content">
             <p>1.499.990 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -107,7 +108,7 @@
           <div class="content">
             <p>189.000 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -122,7 +123,7 @@
           <div class="content">
             <p>1.499.990 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -137,7 +138,7 @@
           <div class="content">
             <p>299.999.999.499.990 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
         
       </ul>
@@ -149,7 +150,7 @@
       <div class = "hmegin">
         <div class="box">
           <div class="content">
-                <img src="myndir/flugvelaMynd.jpg" alt="mynd af flugvél">
+                <img src="myndir/voruhusMynd.jpg" alt="mynd af flugvél">
           </div>
         </div>
       </div>
@@ -166,7 +167,7 @@
             </p>
           </div>
 
-          <a class="button2" href="./sidur/um.html">Lesa meira um okkur</a>
+          <a class="button2" href="./voru-listi.html">Skoða allar vörur</a>
         </div>
       </div>
 
@@ -190,7 +191,7 @@
           <div class="content">
             <p>1.499.990 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -206,7 +207,7 @@
             <p>Lasagna með fersku salati</p>
             <p>2.500 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -222,7 +223,7 @@
             <p>Klassísk pizza</p>
             <p>2.000 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
 
         <li class="box">
@@ -237,7 +238,7 @@
           <div class="content">
             <p>299.999.999.499.990 kr.-</p>
           </div>
-          <a class="button" href="./sidur/panta.html">Setja í körfu</a>
+          <a class="button" href="./pontunarsida.html">Setja í körfu</a>
         </li>
         
       </ul>
@@ -246,7 +247,7 @@
       
   </main>
 
-  <footer class="footer span">
+  <footer class="footer-index span">
     <div class="content">
       <section class = "footer-content">
         <h2>Opnunartími</h2>

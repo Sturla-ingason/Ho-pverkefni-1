@@ -236,9 +236,13 @@ img {
   grid-column-end: 8;
   font-size: 14px;
 }
+@media (min-width: 500px) {
+  .popular-index {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+}
 
 .popular-index {
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
@@ -252,14 +256,24 @@ img {
 
 .mynd-header {
   background-image: url("myndir/headerMynd.jpg");
+  padding-bottom: 4rem;
 }
-
+@media (min-width: 500px) {
+  .mynd-header {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+}
 .header-index {
   grid-column: span 12;
   align-self: center;
   justify-self: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+@media (max-width: 1000px) {
+  .header-index h1{
+    font-size: 70px;
+  }
 }
 
 /** Valmynd **/
@@ -268,7 +282,6 @@ img {
   font-weight: bold;
   justify-content: left;
 }
-
 .search {
   display: flex;
   align-items: center;
@@ -292,6 +305,7 @@ img {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
 
 .nav-pont {
   width: auto;
@@ -325,6 +339,11 @@ img {
   justify-self: center;
   align-self: center;
 }
+@media (max-width: 950px) {
+  .leit {
+      display: none;
+  }
+}
 
 .category {
   grid-column-start: 8;
@@ -332,6 +351,39 @@ img {
   font-size: 16px;
   justify-self: center;
   align-self: center;
+}
+
+#hamborgaraMenu {
+  display: none;
+}
+.menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px 16px;
+}
+
+.hamborgari {
+  display: block;
+  cursor: pointer;
+}
+
+#hamborgaraMenu:checked + .hamborgari + .menu {
+  display: block;
+}
+@media (min-width: 950px) {
+  .menu {
+    grid-column-start: 11;
+    grid-column-end: 12;
+      display: flex;
+  }
+
+  .hamborgari, #hamborgaraMenu {
+      display: none;
+  }
 }
 
 .chart {
@@ -342,6 +394,7 @@ img {
 
 /** Meginmál **/
 .main {
+  padding-top: 2rem;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 100%;
@@ -407,9 +460,7 @@ img {
   padding-right: 1rem;
 }
 
-.skalinur {
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
+
 
 .footer-content {
   display: flex;
@@ -449,6 +500,7 @@ img {
   color: var(--color-dark);
   background-color: var(--color-white);
   border-radius: 5px;
+  grid-column: span 12
 }
 
 .hmegin {
@@ -459,6 +511,22 @@ img {
 .vmegin {
   grid-column-start: 7;
   grid-column-end: 11;
+}
+.vmegin a{
+  width:10rem;
+}
+.hmegin a{
+  width:10rem;
+}
+@media (max-width: 500px) {
+  .hmegin {
+    grid-column: span 12;
+  }
+}
+@media (max-width: 500px) {
+  .vmegin {
+    grid-column: span 12;
+  }
 }
 
 @media (min-width: 500px) {
@@ -475,8 +543,8 @@ img {
   flex: 1;
 }
 
-.boxes .box img {
-  max-height: 400px;
+.popular-index .boxes .box img {
+  height: 200px;
   object-fit: cover;
   object-position: top center;
 }
