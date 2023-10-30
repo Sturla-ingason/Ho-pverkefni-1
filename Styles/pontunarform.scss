@@ -67,6 +67,10 @@ border-radius: var(--border-radius);
     padding-left: 1rem;
 }
 
+.grid-6 p{
+    padding-bottom: 1rem;
+}
+
 .input{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -108,3 +112,37 @@ border-radius: var(--border-radius);
     grid-row: span 2;
 }
 
+.padding-bot{
+    padding-bottom: 2rem;
+}
+
+.pontun-karfa{
+    grid-column: 7/13;
+}
+
+.pontun-karfa img{
+    grid-column: 1/2;
+}
+
+.nafn-karfa{
+    grid-column: 2/5;
+    justify-self: center;
+    padding-top: 1rem;
+}
+
+.peningur{
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+    padding-top: 1rem;
+
+    justify-self: flex-end;
+}
+
+.pontun-karfa hr{
+    grid-column: 1/7;
+}
+
+.samtals{
+    padding-top:1rem;
+}

@@ -14,38 +14,41 @@
 </head>
 
 <body class = "wrapper">
+
   <header class = "grid">
-    <div class="logo titil">
+    <div class="titil">
       ⚙️Tæknibúðin
     </div>
 
     <div class="leit">
         <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." /> <button>🔍</button>
     </div>
-      
     <nav class = "category">
-      <a href="voru-listi.html">Nýjar vörur</a>
-      <a href="pöntunarsida.html">Tilboðs vörur</a>
-      <a href="voru-listi.html">Allar vörur</a>
+      <input type="checkbox" id="hamborgaraMenu">
+      <label class="hamborgari" for="hamborgaraMenu">☰</label>
+      <ul class="menu">
+        <li><a href="voru-listi.html">Nýjar vörur</a></li>
+        <li><a href="pöntunarsida.html">Tilboðs vörur</a></li>
+        <li><a href="voru-listi.html">Allar vörur</a></li>
+      </ul>
     </nav>
-
     <div class="cart chart">
       🛒
     </div>
-
 
     <div class = "pontun-header ">
       <p>Pöntun</p>
     </div>
 
   </header>
+
   <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
   </div>
 
   <main class="main grid" id="efni">
     
-    <div class = "grid-6 kaupandi">
+    <div class = "grid-6 kaupandi padding-bot">
       <p class = "kaupandi"><strong>Kaupandi</strong></p>
 
       <div class = "input">
@@ -70,7 +73,28 @@
       </div>
     </div>
 
-    <div class = "grid-6 kaupandi">
+    <div class = "grid-6 pontun-karfa">
+
+      <img src="myndir/velmenniMynd.jpg" alt="mynd af velmenni">
+
+      <p class = "nafn-karfa">Vinnalegur róbot</p>
+
+      <p class = "peningur">1.499.990 kr.</p>
+
+      <img src="myndir/modubordMynd.jpg" alt="mynd af velmenni">
+
+      <p class = "nafn-karfa">Tæknilegt móðurborð</p>
+
+      <p class = "peningur">189.000 kr.</p>
+
+      <p class = "samtals"><strong>Samtals</strong></p>
+
+      <p class = "peningur">1.688.990 kr.</p>
+
+    </div>
+    
+
+    <div class = "grid-6 kaupandi padding-bot">
         
       <p class = "kaupandi"><strong>Afhending</strong></p>
 
@@ -94,8 +118,6 @@
         </div>
       </div>
     </div>
-
-    <div class = "grid-6">
       
     </div>
 

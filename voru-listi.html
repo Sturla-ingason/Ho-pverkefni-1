@@ -16,27 +16,28 @@
 <body class = "wrapper">
 
   <header class = "grid">
-    <div class="logo titil">
+    <div class="titil">
       ⚙️Tæknibúðin
     </div>
 
     <div class="leit">
         <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl." /> <button>🔍</button>
     </div>
-      
     <nav class = "category">
-      <a href="voru-listi.html">Nýjar vörur</a>
-      <a href="pöntunarsida.html">Tilboðs vörur</a>
-      <a href="voru-listi.html">Allar vörur</a>
+      <input type="checkbox" id="hamborgaraMenu">
+      <label class="hamborgari" for="hamborgaraMenu">☰</label>
+      <ul class="menu">
+        <li><a href="voru-listi.html">Nýjar vörur</a></li>
+        <li><a href="pöntunarsida.html">Tilboðs vörur</a></li>
+        <li><a href="voru-listi.html">Allar vörur</a></li>
+      </ul>
     </nav>
-
     <div class="cart chart">
       🛒
     </div>
 
-
-    <div class = "pontun-header">
-      <p>Pöntun</p>
+    <div class = "pontun-header ">
+      <p>Vörur</p>
     </div>
 
   </header>
