@@ -39,3 +39,9 @@ img {
     white-space: nowrap;
     width: 1px;
 }
+
+@media (min-width: 500px) {
+  .popular-index {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+}

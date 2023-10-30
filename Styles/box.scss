@@ -39,6 +39,23 @@
     grid-column-end: 11
 }
 
+.vmegin a{
+  width:10rem;
+}
+.hmegin a{
+  width:10rem;
+}
+@media (max-width: 500px) {
+  .hmegin {
+    grid-column: span 12;
+  }
+}
+@media (max-width: 500px) {
+  .vmegin {
+    grid-column: span 12;
+  }
+}
+
 @media (min-width: 500px) {
     .boxes .box {
         grid-column: span 6;
@@ -57,11 +74,10 @@
     flex: 1;
 }
 
-.boxes .box img {
-    max-height: 400px;
-
-    object-fit: cover;
-    object-position: top center;
+.popular-index .boxes .box img {
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 @media (min-width: 1000px) {
