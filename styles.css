@@ -384,6 +384,10 @@ img {
     display: none;
   }
 }
+.link {
+  text-decoration: none;
+}
+
 /** Meginmál **/
 .main {
   display: grid;
