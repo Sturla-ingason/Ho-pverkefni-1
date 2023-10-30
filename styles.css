@@ -784,4 +784,34 @@ form button {
   flex-direction: column;
 }
 
+.tengdarvorur-litur {
+  background-color: #E1CEC2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tengdarvorur-titil {
+  grid-column: span 12;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.tengdarvorur {
+  display: inline-flex;
+  grid-column: 1/7;
+  padding-left: 1rem;
+}
+
+.tengdarvorur .box {
+  background-color: white;
+}
+
+.paddingl {
+  margin-left: 1rem;
+}
+
+.padding-box {
+  padding-bottom: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
