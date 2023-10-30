@@ -740,4 +740,48 @@ form button {
   padding-bottom: 2rem;
 }
 
+.mynd {
+  padding-left: 1rem;
+  grid-column: 1/6;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.padding-top {
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.lysing {
+  grid-column: 6/13;
+  display: flex;
+  flex-direction: column;
+}
+
+.lysing div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.taki-verd {
+  display: inline-flex;
+}
+
+.taki-verd .button {
+  margin-left: auto;
+}
+
+.eiginleikar {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: white;
+}
+
+.eiginleikar div {
+  grid-column: 3/11;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
