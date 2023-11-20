@@ -6,8 +6,8 @@
     "stylelint": "^15.11.0"
   },
   "scripts": {
-    "browser-sync": "browser-sync start --server --files Index.html styles.css",
-    "sass": "sass Styles/styles.scss styles.css -w",
-    "dev": "concurrently npm:browser-sync npm:sass"
+    "browser-sync": "browser-sync start --server --files 'index.html' 'styles.css'",
+    "sass": "sass Styles/styles.scss:styles.css --watch",
+    "dev": "concurrently \"npm run browser-sync\" \"npm run sass\""
   }
 }
